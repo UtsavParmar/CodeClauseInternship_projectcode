@@ -1,0 +1,147 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #e389b9;
+    animation: gradientAnimation 10s ease-in-out infinite alternate;
+    background-image: url(blue-3330475_1920.png);
+}
+
+
+
+
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(21, 26, 35);
+    height: 600px;
+    width: 800px;
+    border: 5px solid rgb(13, 7, 10);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(21, 26, 35);
+    border: 5px solid transparent;
+    transition: border-color 0.6s ease-in-out;
+    
+}
+.main:hover {
+    border-color: rgb(123, 214, 149);
+}
+#longurl {
+     position: relative;
+    top: 40%;
+    left: 10%;
+    height: 40px;
+    width: 296px;
+    border: 2px solid rgb(6, 5, 5);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; 
+}
+
+#longurl:hover {
+    transform: scale(1.05); 
+    background-color: rgb(6, 5, 5);
+    color: white;
+}
+
+#shorten{
+    position: relative;
+    top: 40%;
+    left: 12%;
+    height: 40px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    background-color: purple;
+}
+
+#shorten:hover{
+    background-color: skyblue;
+}
+
+#shorturl{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    height: 40px;
+    width: 296px;
+    border: 2px solid rgb(6, 5, 5);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; 
+}
+#shorturl:hover{
+    transform: scale(1.05); 
+    background-color: rgb(6, 5, 5);
+    color: white;
+}
+
+#copy{
+    position: relative;
+    top: 46%;
+    left: 0%;
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: purple;
+}
+
+#copy:hover{
+    background-color: skyblue;
+}
+
+.main p{
+    /* background-color: white; */
+    position: relative;
+    top: 30%;
+    left: 13%;
+    height: 60px;
+    width: 400px;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(160, 0, 0);
+
+}
+
+p::after{
+    content:"";
+
+    display:block;
+    height: 4px;
+    width: 100%;
+    background-color: aqua;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition: transform 0.3s ease;
+
+}
+
+p:hover::after{
+transform:scaleX(1);
+}
+
+
